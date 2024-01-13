@@ -91,6 +91,7 @@ server.bindAsync(
     if (err) {
       console.log("error on server file : ", err);
     } else {
+      server.start();
       console.log("GRPC Server is listening to ", port);
     }
   }
